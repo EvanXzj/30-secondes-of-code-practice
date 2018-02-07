@@ -1,8 +1,4 @@
-const call = (key, ...args) => {
-  return (context) => {
-    return context[key](...args)
-  }
-}
+const call = (key, ...args) => (context) => context[key](...args)
 
 module.exports = {
   call
